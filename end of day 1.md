@@ -1,15 +1,34 @@
-### Challenge: Automate System Status Archiving
+# Day 2 Start-of-Class Warmup!
 
-Write a Bash script that automates the following tasks:
+<img src="https://ih1.redbubble.net/image.3528575302.7254/fposter,small,wall_texture,product,750x1000.u2.jpg" width="300">
 
-1. **Write Output to a File**: Save the output of `systemctl status atd` to a file named `/tmp/day1.txt`.
-2. **Create a Compressed Tar Archive**: Make a compressed tar archive (`tar.gz`) of the `/tmp` directory and save it as `day1tarfile.tar.gz` in the `/home/student/` directory.
-3. **Schedule the Script**: Configure this script to run every three minutes.
+We covered a lot of content on our first day- let's see how much of it we can include in a warmup activity!
 
-This script will help you practice managing system services, file compression, and scheduling with cron.
+In your RHEL machines, write a bash script that automates the following:
 
----
+1. Save the output of `systemctl status atd` to a file named `/tmp/day1.txt`.
+   <details>
+   <summary>Hint</summary>
+     
+   Use the redirection operator `>` to save output to a file.
+   
+   </details>
 
+3. Make a tar archive named `day1tarfile.tar.gz` of the `/tmp` directory. It should be compressed with `gzip`. The tar file should be saved to the `/home/student/` directory.
+   <details>
+   <summary>Hint</summary>
+     
+   Use the `tar` command with both the `-c` (create) and `-z` (gzip) options. Specify the output file location with the `-f` option. `-v` is also nice if you want to see all your files zoom by :)
+   
+   </details>
+
+5. Configure this script to run every three minutes.
+   <details>
+   <summary>Hint</summary>
+     
+   Use `crontab -e` to add a new cron job. Set the schedule by specifying `*/3 * * * *`.
+   
+   </details>
 <details>
 <summary>Click here to see the solution</summary>
 
