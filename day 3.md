@@ -4,6 +4,12 @@
 
 Here are a few quick tasks that are similar to what you might encounter on the RHCSA exam! Chad has already snuck into your machines and committed some shenanigans 😈
 
+**RUN THIS FIRST:**
+
+```bash
+cd && wget -qO day3setup.sh https://raw.githubusercontent.com/csfeeser/redhat/refs/heads/main/scripts/day3setup.sh && sudo bash day3setup.sh
+```
+
 1. Find the process consuming the most CPU on your machine. Kill this process.
 
    <details>
