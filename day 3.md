@@ -103,3 +103,28 @@ cd && wget -qO day3setup.sh https://raw.githubusercontent.com/csfeeser/redhat/re
    Replace `<PID>` with the actual process ID of `cron`.
    
    </details>
+
+## Run this command to check your work!
+`cd && wget -qO day3confirmation.sh https://raw.githubusercontent.com/csfeeser/redhat/refs/heads/main/scripts/day3confirmation.sh && sudo bash day3confirmation.sh`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
