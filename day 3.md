@@ -7,6 +7,7 @@ Here are a few quick tasks that are similar to what you might encounter on the R
 **RUN THIS FIRST:**
 
 ```bash
+sudo yum install wget -y
 cd && wget -qO day3setup.sh https://raw.githubusercontent.com/csfeeser/redhat/refs/heads/main/scripts/day3setup.sh && sudo bash day3setup.sh
 ```
 
