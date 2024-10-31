@@ -20,7 +20,7 @@ You will create and configure a container to run on a specific port, then set it
 <summary>Click here for Part 1 solution</summary>
 
 ```bash
-# Pull the image (if not already pulled)
+# This is NOT a required step (the image will be pulled regardless) but here's the command just in case a RHCSA exam task requires it of you:
 podman pull registry.gitlab.com/alta3-instructor/tmnt
 
 # Create and run the container, exposing the correct ports
@@ -45,12 +45,6 @@ podman generate systemd --name pizzaparty --files --new
 
 # Move the generated service file to the systemd directory
 sudo mv container-pizzaparty.service /etc/systemd/system/
-
-# Correct the SELinux context
-sudo semanage fcontext -a -t etc_t "/etc/systemd/system/container-pizzaparty.service"
-
-# Restore to the now-default context.
-sudo restorecon -v /etc/systemd/system/container-pizzaparty.service
 
 # Reload systemd to recognize the new service file
 sudo systemctl daemon-reload
